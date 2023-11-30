@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+        /* Add your styles here */
+    </style>
+</head>
+<body>
+    <div class="product-details">
+        <img src="product-image.jpg" alt="Product Image" style="width: 100px; height: 100px;">
+        <p>SONY WF-LS900N Bluetooth Headset</p>
+        <p>Price: ₹249</p>
+    </div>
+
+    <div class="qr-code">
+        <img src="generate_qr_code.php?amount=249" alt="QR Code">
+        <p>Scan QR code with UPI app for payment</p>
+    </div>
+
+    <script>
+        // You may want to handle payment verification on the server
+        function verifyPayment() {
+            // Perform verification logic, e.g., check with the payment gateway
+            // If payment is successful, redirect to a success page
+            window.location.href = 'success.html';
+        }
+    </script>
+
+    <button onclick="verifyPayment()">Pay ₹249</button>
+</body>
+</html>

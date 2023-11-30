@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="payment-container">
+    <div class="product-details">
+        <img src="imgqr/pdct7.jpg" alt="Product Image">
+        <p>SONY WF-LS900N Bluetooth Headset</p>
+        <p>Price: ₹249</p>
+    </div>
+
+    <div class="qr-code">
+        <img src="generate_qr_code.php?amount=249" alt="QR Code">
+        <p>Scan QR code with UPI app for payment</p>
+    </div>
+
+    <button id="payButton">Pay ₹249</button>
+</div>
+
+<script src="payment.js"></script>
+</body>
+</html>
